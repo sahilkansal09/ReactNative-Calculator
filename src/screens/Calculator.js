@@ -159,7 +159,6 @@ export default class Calculator extends React.Component {
                         textOutput: '= ' + output
                     });
                 }
-
             }
         }
     }
@@ -263,7 +262,7 @@ export default class Calculator extends React.Component {
             <View>
                 {/* Top Section for input */}
                 <View style={{ backgroundColor: '', height: '40%', justifyContent: 'flex-end' }}>
-                    <View style={{ backgroundColor: '', height: '60%', }}>
+                    <View style={{ backgroundColor: '', height: '60%', minHeight: '30%' }}>
                         <TextInput
                             style=
                             {{
