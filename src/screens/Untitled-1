@@ -1,0 +1,101 @@
+  <View style={{ flexDirection: 'column', backgroundColor: 'red' }}>
+                            <Button
+                                onPress={() => {
+                                    this.buttonClearPressed()
+                                }
+                                }
+                                text={'AC'}
+                            />
+                            <Button
+                                onPress={() => {
+                                    this.buttonPressed('7');
+                                }
+                                }
+                                text={'7'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('4')}
+                                text={'4'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('1')}
+                                text={'1'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('%')}
+                                text={'%'}
+                            />
+                        </View>
+                        <View style={{ flexDirection: 'column' }}>
+                            <Button
+                                onPress={() => this.buttonDeletePressed()}
+                                text={'DEL'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('8')
+                                }
+                                text={'8'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('5')}
+                                text={'5'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('2')}
+                                text={'2'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('0')}
+                                text={'0'}
+                            />
+
+
+                        </View>
+                        <View>
+                            <View style={{ flexDirection: 'column' }}>
+
+                                <Button
+                                    onPress={() => this.buttonPressed('/')}
+                                    text={'/'}
+                                />
+                                <Button
+                                    onPress={() => this.buttonPressed('9')}
+                                    text={'9'}
+                                />
+                                <Button
+                                    onPress={() => this.buttonPressed('6')}
+                                    text={'6'}
+                                />
+                                <Button
+                                    onPress={() => this.buttonPressed('3')}
+                                    text={'3'}
+                                />
+                                <Button
+                                    onPress={() => this.buttonPressed('.')}
+                                    text={'.'}
+                                />
+
+                            </View>
+                        </View>
+                        <View style={{ flexDirection: 'column' }}>
+
+                            <Button
+                                onPress={() => this.buttonPressed('*')}
+                                text={'*'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('-')}
+                                text={'-'}
+                            />
+                            <Button
+                                onPress={() => this.buttonPressed('+')}
+                                text={'+'}
+                            />
+                            <TouchableOpacity onPress={() => this.buttonEqualPressed()}
+                                style={{ backgroundColor: 'orange', borderColor: 'grey', borderWidth: 1, flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                                <Text
+                                    style={{ fontSize: this.state.outputTextSize }}>
+                                    =</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
